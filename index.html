@@ -55,7 +55,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/logo.png" alt="Logo" />
+                  <img src="assets/img/logo/logo-new.png" alt="Logo" class="img-fluid"/>
                 </a>
                 <button
                   class="navbar-toggler"
@@ -80,14 +80,20 @@
                       <a class="page-scroll active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#features">Porque ?</a>
+                      <a class="page-scroll active" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#about">Sobre</a>
+                      <a class="page-scroll" href="#features">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#conquistas">Conquistas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#equipe">Equipe</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="page-scroll" href="#time">Time</a>
+                      <a class="page-scroll" href="#contato">Contato</a>
                     </li>
                   </ul>
                 </div>
@@ -105,7 +111,43 @@
     <!-- ======== header end ======== -->
 
     <!-- ======== hero-section start ======== -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section" style="height: 100vh;">
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="wow fadeInUp" data-wow-delay=".4s">
+                PrediPark em Ação!
+              </h1>
+              <h1 class="wow fadeInUp" style="font-size: 2.5rem;" data-wow-delay=".4s">
+                Sua rota inteligente para estacionar sem estresse!
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay=".6s">
+                Atualmente no Brasil não existe nenhuma solução para o problema de estacionar o carro na rua que utilize modelos preditivos e que cubra vagas além das de estacionamento rotativo. O modelo preditivo não depende de uma infraestrutura “inteligente” composta por sensores ou câmeras, pois utiliza dados abertos que já são mapeados pelas cidades. 
+              </p>
+              <a
+                href="#vantagens"
+                class="main-btn border-btn btn-hover wow fadeInUp"
+                data-wow-delay=".6s"
+                >Saiba mais</a
+              >
+              <a href="#sobre" class="scroll-bottom">
+                <i class="lni lni-arrow-down"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+              <img src="assets/img/hero/hero-predi-new.png" alt="" class="img-fluid"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== hero-section end ======== -->
+    
+    <!-- ======== - start ======== -->
+    <section id="sobre" class="">
       <div class="container">
         <div class="row align-items-center position-relative">
           <div class="col-lg-6">
@@ -118,7 +160,7 @@
 
               <p class="wow fadeInUp" data-wow-delay=".6s">
                 Nenhuma solução nesse segmento de mercado traz uma mensuração da economia e impacto gerado a partir do uso da ferramenta, principalmente em relação ao impacto ambiental.</p>
-</p>
+              </p>
               <a
                 href="javascript:void(0)"
                 class="main-btn border-btn btn-hover wow fadeInUp d-none"
@@ -132,13 +174,13 @@
           </div>
           <div class="col-lg-6">
             <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-              <img src="assets/img/hero/hero-predi.webp" alt="" />
+              <img src="assets/img/hero/hero-predi-new.webp" alt="" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ======== hero-section end ======== -->
+    <!-- ======== - end ======== -->
 
     <!-- ======== feature-section start ======== -->
     <section id="features" class="feature-section pt-120">
@@ -202,7 +244,7 @@
     <!-- ======== feature-section end ======== -->
 
     <!-- ======== about-section start ======== -->
-    <section id="about" class="about-section pt-150">
+    <section id="conquistas" class="about-section pt-150">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 col-lg-6">
@@ -293,24 +335,24 @@
       </div>
     </section>
     <!-- ======== about2-section end ======== -->
-    <section id="why" class="feature-extended-section pt-100">
+    <section id="parceiros" class="feature-extended-section pt-100">
       <div class="feature-extended-wrapper">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
               <div class="section-title text-center mb-60">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
                   Pare de ficar rodando atrás de uma vaga
-                </h2>
+                </h1>
               </div>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
               <div class="section-title text-center mb-60">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
                   Parceiros:
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -318,22 +360,32 @@
           <div class="row justify-content-center">
             <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
               <div class="section-title text-center mb-10">
-                <img src="assets/img/parceiros/ade.webp" class=" wow fadeInUp w-4" alt="...">
+                <img src="https://adesampa.com.br/programacao/wp-content/uploads/2021/08/ADE2021.png" class="img-fluid wow fadeInUp w-4" alt="...">
               </div>
             </div>
             <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
               <div class="section-title text-center mb-10">
-                <img src="assets/img/parceiros/insper.webp" class=" wow fadeInUp w-10" alt="...">
+                <img src="assets/img/parceiros/insper.webp" class="img-fluid wow fadeInUp w-10" alt="...">
               </div>
             </div>
             <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
               <div class="section-title text-center mb-10">
-                <img src="assets/img/parceiros/perini.webp" class=" wow fadeInUp w-10" alt="...">
+                <img src="assets/img/parceiros/perini.webp" class="img-fluid wow fadeInUp w-10" alt="...">
               </div>
             </div>
             <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
               <div class="section-title text-center mb-10">
-                <img src="assets/img/parceiros/prolider_edited.webp" class=" wow fadeInUp w-10" alt="...">
+                <img src="assets/img/parceiros/prolider_edited.png" class="img-fluid wow fadeInUp w-10" alt="...">
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
+              <div class="section-title text-center mb-10">
+                <img src="assets/img/parceiros/nexus.png" class="img-fluid wow fadeInUp w-10" alt="...">
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
+              <div class="section-title text-center mb-10">
+                <img src="assets/img/parceiros/InsperHub.png" class="img-fluid wow fadeInUp w-10" alt="...">
               </div>
             </div>
           </div> 
@@ -341,14 +393,14 @@
       </div>
     </section>
     <!-- ======== feature-section start ======== -->
-    <section id="time" class="feature-extended-section pt-100">
+    <section id="equipe" class="feature-extended-section pt-100">
       <div class="feature-extended-wrapper">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
               <div class="section-title text-center mb-60">
                 <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Conheça o time
+                  Conheça a equipe
                 </h2>
                 <p class="wow fadeInUp d-none" data-wow-delay=".4s">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -398,7 +450,7 @@
     <!-- ======== feature-section end ======== -->
 
     <!-- ======== subscribe-section start ======== -->
-    <section id="contact" class="subscribe-section pt-120">
+    <section id="contato" class="subscribe-section pt-120">
       <div class="container">
         <div class="subscribe-wrapper img-bg">
           <div class="row align-items-center">
@@ -438,7 +490,7 @@
               <div class="footer-widget">
                 <div class="logo mb-30">
                   <a href="index.html">
-                    <img src="assets/img/logo/logo.png" alt="" />
+                    <img src="assets/img/logo/logo-new.png" alt="" class="img-fluid"/>
                   </a>
                 </div>
                 <p class="desc mb-30 text-white">
