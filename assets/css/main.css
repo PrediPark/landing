@@ -809,7 +809,9 @@ p {
 
 @media (max-width: 767px) {
   .hero-section .hero-content h1 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
 }
 
@@ -2275,12 +2277,15 @@ p {
   }
   
   .hero-section .hero-content h1 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
   
   .hero-section .hero-content p {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-right: 0;
   }
   
   .section-title h2 {
@@ -2317,7 +2322,11 @@ p {
 
 @media (max-width: 575px) {
   .hero-section .hero-content h1 {
-    font-size: 28px;
+    font-size: 20px;
+  }
+  
+  .hero-section .hero-content p {
+    font-size: 13px;
   }
   
   .main-btn {
@@ -2518,10 +2527,11 @@ p {
   }
 }
 
-/* Hide hero image on mobile */
+/* Show hero image on mobile with proper spacing */
 @media (max-width: 767px) {
   .hero-section .hero-img {
-    display: none;
+    display: block;
+    margin-top: -80px;
   }
   
   .hero-section .hero-content {
@@ -2529,8 +2539,20 @@ p {
     margin-bottom: 0;
   }
   
+  .hero-section .hero-content h1 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
   .hero-section .hero-content p {
     padding-right: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .hero-section .hero-content .main-btn.border-btn {
+    display: none;
   }
   
   .hero-section .container {
@@ -2541,31 +2563,22 @@ p {
   .hero-section .row {
     justify-content: center;
   }
-}
-
-/* Hide first heading on mobile */
-@media (max-width: 767px) {
-  .hero-section .hero-content h1:first-child {
-    display: none;
-  }
-  
-  .hero-section .hero-content h1:last-child {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-}
-
-/* Hide button and adjust scroll bottom on mobile */
-@media (max-width: 767px) {
-  .hero-section .hero-content .main-btn.border-btn {
-    display: none;
-  }
   
   .container .scroll-bottom {
     bottom: 40px;
   }
   
   .hero-section {
-    padding-bottom: 80px;
+    padding-bottom: 160px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section .hero-content h1 {
+    font-size: 18px;
+  }
+  
+  .hero-section .hero-content p {
+    font-size: 13px;
   }
 }
