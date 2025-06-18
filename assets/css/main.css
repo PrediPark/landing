@@ -16,6 +16,7 @@
 ===========================*/
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -846,20 +847,34 @@ p {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.hero-section .hero-content .scroll-bottom {
-  position: absolute;
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+.container .scroll-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #fff;
   border: 3px solid #5864FF;
   color: #5864FF;
-  left: 15px;
-  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20;
   z-index: 9;
+  animation: bounceDown 2s ease-in-out infinite;
 }
 
-.hero-section .hero-content .scroll-bottom i {
+.container .scroll-bottom i {
   font-weight: 700;
 }
 
@@ -913,6 +928,11 @@ p {
 }
 
 /* ====== feature css ====== */
+.feature-section {
+  background-color: #EEEFFF;
+}
+
+
 @media (max-width: 767px) {
   .feature-section.pt-120 {
     padding-top: 80px;
@@ -940,6 +960,52 @@ p {
   margin-bottom: 30px;
   font-size: 65px;
   line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-section .single-feature .icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Team section specific styles */
+#equipe .single-feature .icon {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  margin-bottom: 30px;
+}
+
+#equipe .single-feature .icon img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  #equipe .single-feature .icon img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  #equipe .single-feature .icon img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+  #equipe .single-feature .icon img {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .feature-section .single-feature .content h3 {
@@ -1269,6 +1335,10 @@ p {
   .subscribe-section .section-title h2 {
     font-size: 32px;
   }
+}
+
+.subscribe-section {
+  background-color: #EEEFFF;
 }
 
 .subscribe-section .subscribe-wrapper {
@@ -2167,4 +2237,335 @@ p {
 
 .pb-225 {
   padding-bottom: 225px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .hero-section .hero-content h1 {
+    font-size: 42px;
+  }
+  
+  .hero-section .hero-content p {
+    font-size: 16px;
+    padding-right: 0;
+  }
+  
+  .feature-section .single-feature {
+    margin-bottom: 30px;
+  }
+  
+  .about-section .about-content {
+    margin-top: 30px;
+  }
+  
+  .subscribe-section .subscribe-wrapper {
+    padding: 40px 30px;
+  }
+  
+  .subscribe-section .subscribe-wrapper .subscribe-form button {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 120px 0 60px;
+  }
+  
+  .hero-section .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-section .hero-content p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .feature-section .single-feature .icon {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+  
+  .about-section .about-img,
+  .about-section .about-img-2 {
+    padding: 30px 0;
+  }
+  
+  .subscribe-section .subscribe-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .subscribe-section .subscribe-wrapper .subscribe-form input {
+    padding: 15px 20px;
+  }
+  
+  .footer {
+    padding-top: 80px;
+  }
+  
+  .footer .widget-wrapper .footer-widget {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .main-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  
+  .feature-section .single-feature {
+    padding: 20px 10px;
+  }
+  
+  .about-section .about-content ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-section .subscribe-wrapper .subscribe-form input {
+    font-size: 14px;
+  }
+  
+  .footer .widget-wrapper .footer-widget ul.links li {
+    font-size: 16px;
+  }
+}
+
+/* Fix for scroll-bottom on mobile */
+@media (max-width: 767px) {
+  .container .scroll-bottom {
+    width: 35px;
+    height: 35px;
+    bottom: 40px;
+  }
+  
+  .container .scroll-bottom i {
+    font-size: 14px;
+  }
+}
+
+/* Improve form responsiveness */
+.subscribe-section .subscribe-wrapper .subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .subscribe-section .subscribe-wrapper .subscribe-form {
+    flex-direction: row;
+  }
+  
+  .subscribe-section .subscribe-wrapper .subscribe-form input {
+    flex: 1;
+  }
+  
+  .subscribe-section .subscribe-wrapper .subscribe-form button {
+    margin-left: 10px;
+  }
+}
+
+/* Improve image responsiveness */
+.hero-section .hero-img img,
+.about-section .about-img img,
+.about-section .about-img-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 767px) {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+}
+
+/* Video Responsive Styles */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+/* Video container specific styles */
+.about-section .about-img .embed-responsive,
+.about-section .about-img-2 .embed-responsive {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+  .about-section .about-img .embed-responsive,
+  .about-section .about-img-2 .embed-responsive {
+    margin: 0 auto 30px;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section .about-img .embed-responsive,
+  .about-section .about-img-2 .embed-responsive {
+    margin: 0 auto 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .embed-responsive-16by9::before {
+    padding-top: 56.25%;
+  }
+}
+
+/* Fix for video aspect ratio on mobile */
+@media (max-width: 575px) {
+  .about-section .about-img .embed-responsive,
+  .about-section .about-img-2 .embed-responsive {
+    margin: 0 auto 15px;
+  }
+}
+
+/* Hide decorative images on mobile */
+@media (max-width: 767px) {
+  .about-section .about-img .shape,
+  .about-section .about-img-2 .shape {
+    display: none;
+  }
+  
+  .about-section .about-img,
+  .about-section .about-img-2 {
+    padding: 0;
+  }
+}
+
+/* Reorder sections on mobile */
+@media (max-width: 767px) {
+  .about-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-section .col-xl-6 {
+    order: 1;
+  }
+  
+  .about-section .col-xl-6.order-first {
+    order: 2;
+  }
+  
+  .about-section .about-content {
+    margin-bottom: 30px;
+  }
+  
+  .about-section .about-img,
+  .about-section .about-img-2 {
+    margin-bottom: 0;
+  }
+}
+
+/* Ensure proper spacing between sections */
+@media (max-width: 767px) {
+  .about-section .container {
+    margin-bottom: 40px;
+  }
+  
+  .about-section .container:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Hide hero image on mobile */
+@media (max-width: 767px) {
+  .hero-section .hero-img {
+    display: none;
+  }
+  
+  .hero-section .hero-content {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .hero-section .hero-content p {
+    padding-right: 0;
+  }
+  
+  .hero-section .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-section .row {
+    justify-content: center;
+  }
+}
+
+/* Hide first heading on mobile */
+@media (max-width: 767px) {
+  .hero-section .hero-content h1:first-child {
+    display: none;
+  }
+  
+  .hero-section .hero-content h1:last-child {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Hide button and adjust scroll bottom on mobile */
+@media (max-width: 767px) {
+  .hero-section .hero-content .main-btn.border-btn {
+    display: none;
+  }
+  
+  .container .scroll-bottom {
+    bottom: 40px;
+  }
+  
+  .hero-section {
+    padding-bottom: 80px;
+  }
 }
