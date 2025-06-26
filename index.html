@@ -7,7 +7,7 @@
   <title>PrediPark - Sua rota inteligente para estacionar sem estresse!</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo-new.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png" />
   <!-- Place favicon.ico in the root directory -->
 
   <!-- ======== CSS here ======== -->
@@ -105,25 +105,19 @@
       <div class="row align-items-center position-relative">
         <div class="col-lg-6">
           <div class="hero-content">
-            <h1 class="wow fadeInUp" style="font-size: 2.5rem;" data-wow-delay=".4s">
+            <h1 class="wow fadeInUp" data-wow-delay=".4s">
               Sua rota inteligente para estacionar sem estresse!
             </h1>
             <p class="wow fadeInUp" data-wow-delay=".6s">
-              Na PrediPark, usamos tecnologia e dados para transformar a forma como as pessoas estacionam nas grandes
-              cidades.
-
-              Nossa solução preditiva indica as regiões com maior chance de vaga antes mesmo de você sair de casa. Sem
-              sensores, sem
-              câmeras — apenas inteligência urbana aplicada ao seu dia a dia.
-
-              Somos uma startup de mobilidade focada em economia de tempo, redução de estresse e impacto ambiental
-              positivo.
-
-              Se você roda São Paulo todos os dias — seja como corretor, técnico ou profissional da saúde — a PrediPark
-              foi feita pra
-              você.
-
-              Em breve em São Paulo! Nos acompanhe para saber mais.
+              A PrediPark usa tecnologia e dados para transformar o jeito de estacionar nas grandes cidades.
+              Nossa solução preditiva mostra onde há mais chance de vaga antes mesmo de você sair de casa.
+              <br><br>
+              Somos uma startup de mobilidade que ajuda você a economizar tempo, reduzir o estresse e o impacto
+              ambiental.
+              Se você roda São Paulo todo dia — como corretor, prestador de serviço ou profissional da saúde — a
+              PrediPark é pra você.
+              <br><br>
+              Em breve. Acompanhe e fique por dentro.
             </p>
 
             <a href="#contato" class="main-btn border-btn btn-hover wow fadeInUp" data-wow-delay=".6s">Saiba mais</a>
@@ -170,8 +164,10 @@
             <div class="content">
               <h3>Ganhe Tempo</h3>
               <p>
-                Segundo Donald Shoup, mais de 30% do trânsito em cidades movimentadas é ocasionado por motoristas
-                buscando por vagas para estacionar o seu carro. Ganhe tempo para as atividades que realmente importam!
+                Segundo Donald Shoup, mais de <b>30% do trânsito</b> em cidades movimentadas é ocasionado por
+                <b>motoristas
+                  buscando por vagas</b> para estacionar o seu carro. Ganhe tempo para as atividades que realmente
+                importam!
                 Estacione de uma forma mais inteligente ;)
               </p>
             </div>
@@ -199,7 +195,8 @@
             <div class="content">
               <h3>Melhore sua Qualidade de Vida</h3>
               <p>
-                Reduza seus níveis de estresse e ansiedade causados pelo trânsito e processo de busca por vagas de
+                Reduza seus níveis de <b>estresse e ansiedade</b> causados pelo trânsito e processo de busca por vagas
+                de
                 estacionamento e se torne uma pessoa mais saudável, caminhando e queimando calorias.
               </p>
             </div>
@@ -241,7 +238,7 @@
                 organizado pelo Instituto Four.
               </p>
             </div>
-            <a href="https://www.insper.edu.br/premio-jose-eduardo-ermirio-de-moraes/5pjeem/"
+            <a href="https://www.insper.edu.br/pt/noticias/2024/3/ex-aluno-do-insper-cria-startup-de-mobilidade-a-partir-de-projet"
               class="main-btn btn-hover border-btn wow fadeInUp" data-wow-delay=".6s">Saiba mais</a>
           </div>
         </div>
@@ -285,7 +282,7 @@
           <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
             <div class="section-title text-center mb-60">
               <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                Pare de ficar rodando atrás de uma vaga
+                <i>Pare de ficar rodando atrás de uma vaga!</i>
               </h1>
             </div>
           </div>
@@ -342,7 +339,7 @@
         <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
           <div class="section-title text-center mb-60">
             <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-              Conheça a equipe
+              Conheça nosso fundador
             </h2>
           </div>
         </div>
@@ -358,15 +355,10 @@
                 height="334" fetchpriority="high">
             </div>
             <div class="content">
-              <h3 class="mb-10">Marcelo Reis, CEO</h3>
-              <p>
-                Engenharia Mecânica no Insper <br><br>
-
-
-                Empreendedorismo em UC Berkeley <br><br>
-
-
-                Experiência Prévia: 99, Accenture & XP Inc.
+              <h3 class="mb-25">Marcelo Reis, CEO</h3>
+              <p class="mb-10">Engenharia Mecânica no Insper</p>
+              <p class="mb-10">Empreendedorismo em UC Berkeley</p>
+              <p class="mb-10">Experiência Prévia: 99, Accenture & XP Inc.</p>
               </p>
             </div>
           </div>
@@ -390,12 +382,24 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-5">
-            <form action="#" class="subscribe-form">
+            <form id="subscribeForm" class="subscribe-form">
               <input type="email" name="subs-email" id="subs-email" placeholder="Your Email" />
               <button type="submit" class="main-btn btn-hover">
                 Inscreva-se
               </button>
             </form>
+            <div id="form-feedback" class="form-feedback">
+              <span id="spinner" style="display:none;">
+                <svg width="32" height="32" viewBox="0 0 50 50">
+                  <circle cx="25" cy="25" r="20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"
+                    stroke-dasharray="31.415, 31.415" transform="rotate(72.5046 25 25)">
+                    <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s"
+                      repeatCount="indefinite" />
+                  </circle>
+                </svg>
+              </span>
+              <span id="message" style="display:none;"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -421,17 +425,17 @@
               <ul class="socials">
                 <li>
                   <a href="https://www.facebook.com/profile.php?id=61577126323291">
-                    <i class="lni lni-facebook-filled"></i>
+                    <i class="lni lni-24 lni-facebook-filled"></i>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/predipark">
-                    <i class="lni lni-instagram-filled"></i>
+                    <i class="lni lni-24 lni-instagram-filled"></i>
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/company/predi-park/">
-                    <i class="lni lni-linkedin-original"></i>
+                    <i class="lni lni-24 lni-linkedin-original"></i>
                   </a>
                 </li>
               </ul>
@@ -488,6 +492,45 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent default redirect/reload
+      const form = e.target;
+      const formData = new FormData(form);
+      const spinner = document.getElementById('spinner');
+      const messageDiv = document.getElementById('message');
+      const feedback = document.getElementById('form-feedback');
+
+      // Show feedback, show spinner, hide message
+      feedback.classList.add('visible');
+      spinner.style.display = 'flex';
+      messageDiv.style.display = 'none';
+      messageDiv.textContent = '';
+      feedback.style.color = '#5864FF';
+
+      fetch('https://script.google.com/macros/s/AKfycbwc-xuumTq9E73rKKzdGqHb0yvHhO3H4RMp3acOrUGMmltfCs08gVDpR_Z6bsos0Fl3mA/exec', {
+        method: 'POST',
+        body: formData
+        // Do NOT set Content-Type header, browser will set it correctly for FormData
+      })
+        .then(response => response.text())
+        .then(result => {
+          spinner.style.display = 'none';
+          messageDiv.textContent = "Obrigado por se inscrever!";
+          messageDiv.style.display = 'flex';
+          feedback.style.color = '#5864FF';
+          form.reset();
+          setTimeout(() => { feedback.classList.remove('visible'); messageDiv.style.display = 'none'; }, 3000);
+        })
+        .catch(error => {
+          spinner.style.display = 'none';
+          messageDiv.textContent = "Erro: " + error;
+          messageDiv.style.display = 'flex';
+          feedback.style.color = '#d32f2f';
+          setTimeout(() => { feedback.classList.remove('visible'); messageDiv.style.display = 'none'; feedback.style.color = '#5864FF'; }, 3000);
+        });
+    });
+  </script>
 </body>
 
 </html>
