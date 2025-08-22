@@ -763,6 +763,12 @@ p {
   width: 100%;
 }
 
+/* Ensure the beta access button text is always white and bold */
+.navbar-nav .nav-item .main-btn {
+  color: #fff;
+  font-weight: 700;
+}
+
 /* ====== hero-area ===== */
 .hero-section {
   position: relative;
