@@ -617,11 +617,11 @@ p {
   }
 }
 
-.sticky .navbar .navbar-nav .nav-item a {
+.sticky .navbar .navbar-nav .nav-item a:not(.main-btn) {
   color: #162447;
 }
 
-.sticky .navbar .navbar-nav .nav-item a::before {
+.sticky .navbar .navbar-nav .nav-item a:not(.main-btn)::before {
   color: #162447;
 }
 
