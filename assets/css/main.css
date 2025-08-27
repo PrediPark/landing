@@ -764,7 +764,11 @@ p {
 }
 
 /* Ensure the beta access button text is always white and bold */
-.navbar-nav .nav-item .main-btn {
+.navbar-nav .nav-item .main-btn,
+.navbar-nav .nav-item .main-btn:visited,
+.navbar-nav .nav-item .main-btn:hover,
+.navbar-nav .nav-item .main-btn:focus,
+.navbar-nav .nav-item .main-btn:active {
   color: #fff;
   font-weight: 700;
 }
