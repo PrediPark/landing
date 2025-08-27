@@ -2683,3 +2683,26 @@ p {
     bottom: 30px;
   }
 }
+
+/* Destaque para o botão Acessar Beta */
+.beta-btn {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.beta-btn:hover {
+  box-shadow: 0 6px 20px rgba(221, 36, 118, 0.6);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(221, 36, 118, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(221, 36, 118, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(221, 36, 118, 0);
+  }
+}
